@@ -49,6 +49,14 @@ const generateFood = function () {
 
 const generateAbout = function () {
   clearContent();
+
+  const about = document.createElement("div");
+  about.classList.add("aboutSection");
+
+  content.appendChild(about);
+
+  about.innerHTML =
+    "Here at Weiner World, we aim to serve up only the best dogs. Even our Whacky wieners are worth the price! Or your money back!!!<br><br>Located at 199 West Ferris St, Harberg New Jersey<br><br>414-555-5588<br><br>Come Party With Us!<br>All summer long we are hosting birthday parties upon request! Please give us at least 3 days notice for preparations.<br><br>Thanks so much! We can't wait to see you next!";
 };
 
 export {

@@ -63,7 +63,8 @@ nav {
   justify-content: space-around;
 }
 
-.menu-item {
+.menu-item,
+.aboutSection {
   display: flex;
   justify-content: space-between;
   border: 2px solid red;
@@ -73,6 +74,10 @@ nav {
   font-family: cursive;
   background-color: white;
   color: red;
+}
+
+.aboutSection {
+  text-align: center;
 }
 
 .title {
