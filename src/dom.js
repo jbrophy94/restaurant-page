@@ -10,15 +10,15 @@ const clearContent = function () {
 
 const generateMenuDiv = function (itemString, priceString) {
   const newDiv = document.createElement("div");
-  content.appendChild("div");
+  content.appendChild(newDiv);
   newDiv.classList.add("menu-item");
 
   const item = document.createElement("div");
-  newDiv.appendChild("div");
+  newDiv.appendChild(item);
   item.classList.add("item");
 
   const price = document.createElement("div");
-  newDiv.appendChild("div");
+  newDiv.appendChild(price);
   price.classList.add("price");
 
   item.textContent = itemString;
@@ -30,10 +30,11 @@ const generateMenuDiv = function (itemString, priceString) {
 const generateBeer = function () {
   clearContent();
 
-  generateMenuDiv("Wiener IPA", "10$");
-  generateMenuDiv("Penile Pilsner", "8$");
-  generateMenuDiv("Heffewiener", "8$");
-  generateMenuDiv("Face Melter", "10$");
+  generateMenuDiv("Wiener IPA (6.5%)", "10$");
+  generateMenuDiv("Penile Pilsner (5.5%)", "8$");
+  generateMenuDiv("Heffewiener (5%)", "8$");
+  generateMenuDiv("Face Melter (8.1%)", "10$");
+  generateMenuDiv("Little Guy Lager (4.4%)", "6$");
 };
 
 const generateFood = function () {
@@ -43,8 +44,17 @@ const generateFood = function () {
   generateMenuDiv("Chilli Wiener", "10$");
   generateMenuDiv("Chilli Cheese Wiener", "12$");
   generateMenuDiv("Wiener Wurst", "14$");
+  generateMenuDiv("Classic Wiener", "6$");
 };
 
 const generateAbout = function () {
-  clearContent;
+  clearContent();
+};
+
+export {
+  generateMenuDiv,
+  clearContent,
+  generateBeer,
+  generateFood,
+  generateAbout,
 };

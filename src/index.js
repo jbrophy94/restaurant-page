@@ -1,5 +1,12 @@
 import "./styles.css";
-import "./dom.js";
+import {
+  generateMenuDiv,
+  clearContent,
+  generateBeer,
+  generateFood,
+  generateAbout,
+} from "./dom.js";
+
 import hotdog from "./images/hotdog.png";
 import ketchup from "./images/ketchup.png";
 console.log("Hello, webpack!");
@@ -25,3 +32,11 @@ ketchupIcon.src = ketchup;
 //     e.target.appendChild(ketchupIcon);
 //   }
 // });
+
+nav.addEventListener("click", function (e) {
+  if ([...e.target.classList].includes("nav-button")) {
+    if ([...e.target.classList].includes("food")) generateFood();
+    else if ([...e.target.classList].includes("beer")) generateBeer();
+    else if ([...e.target.classList].includes("about")) generateAbout();
+  }
+});

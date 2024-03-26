@@ -56,6 +56,23 @@ nav {
   height: 70vh;
   width: 400px;
   background-color: gold;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid red;
+  border-radius: 12px;
+  width: 80%;
+  padding: 20px;
+  font-family: cursive;
+  background-color: white;
+  color: red;
 }
 
 .title {
