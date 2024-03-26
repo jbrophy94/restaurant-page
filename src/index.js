@@ -16,6 +16,8 @@ const content = document.querySelector("#content");
 const nav = document.querySelector("nav");
 const title = document.createElement("div");
 
+generateFood();
+
 nav.addEventListener("click", function (e) {
   //Event propagation
   if ([...e.target.classList].includes("nav-button")) {
