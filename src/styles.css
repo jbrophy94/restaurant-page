@@ -106,3 +106,7 @@ nav {
 
   -webkit-text-stroke: 0.2px black;
 }
+
+.selected {
+  text-decoration: underline;
+}
