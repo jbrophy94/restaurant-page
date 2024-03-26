@@ -7,12 +7,14 @@ body {
 
   background: url("./images/hotdog.png");
   background-size: 50px;
+  background-attachment: fixed;
 }
 
 nav {
+  margin-top: 15px;
   display: flex;
   justify-content: space-around;
-  width: 60vw;
+  width: 400px;
   padding: 10px;
   border: 2px solid red;
   border-radius: 12px;
@@ -52,6 +54,33 @@ nav {
   padding: 10px;
   margin-top: 10px;
   height: 70vh;
-  width: 60vw;
+  width: 400px;
   background-color: gold;
+}
+
+.title {
+  /* clip-path: polygon(
+    0 21%,
+    11% 0,
+    89% 0,
+    100% 21%,
+    100% 79%,
+    89% 100%,
+    11% 100%,
+    0 79%
+  ); */
+  font-size: 4em;
+  font-family: cursive;
+  font-weight: bold;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: gold;
+  padding: 5px 10px;
+  margin-top: 0px;
+  width: 100vw;
+
+  border: 2px solid gold;
+  border-radius: 12px;
+  text-align: center;
+
+  -webkit-text-stroke: 0.2px black;
 }
